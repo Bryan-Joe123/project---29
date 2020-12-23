@@ -8,6 +8,10 @@ class SlingShot{
         }
         this.pointB = pointB;
 
+        this.sling1=loadImage("sprites/sling1.png");
+        this.sling2=loadImage("sprites/sling2.png");
+        this.sling3=loadImage("sprites/sling3.png");
+
         this.sling = Constraint.create(options);
         World.add(world, this.sling);
     }
@@ -22,7 +26,7 @@ class SlingShot{
             var pointB = this.pointB;
             strokeWeight(15);
             stroke(48,22,8);
-            // line(pointA.x, pointA.y, pointB.x, pointB.y);
         }
     }
+    
 }
